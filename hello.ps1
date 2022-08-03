@@ -2,4 +2,4 @@
 $Password = $env:Password | ConvertTo-SecureString -AsPlainText -Force
 $creddentials = New-Object System.Management.Automation.PSCredential -ArgumentList $env:UserName, $Password
 Connect-PowerBIServiceAccount -Credential $creddentials
-New-PowerBIReport -Path $env:File -Name 'JJJ'
+New-PowerBIReport -Path '$env:File' -Name 'JJJ'
