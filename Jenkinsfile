@@ -6,19 +6,9 @@ pipeline {
         bat 'pwsh --version'
       }
     }
-    stage('Dev') {
+    stage('hello') {
       steps {
-        bat 'pwsh dev.ps1'
-      }
-    }
-     stage('Test') {
-      steps {
-        bat 'pwsh test.ps1'
-      }
-    }
-     stage('Prod') {
-      steps {
-        bat 'pwsh prod.ps1'
+        bat 'hello.ps1'
       }
     }
   }
